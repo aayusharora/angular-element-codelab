@@ -1,0 +1,84 @@
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  height:100%;
+  overflow: hidden;
+}
+
+.img-container {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  height: auto !important;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+
+
+.slide-button:hover, .slide-button-select {
+  width: 64px !important;
+  background-color: rgba(255,255,255,1) !important;
+  pointer-events: none;
+  transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
+}
+
+
+.slide-button {
+  width: 30px;
+  height: 4px;
+  background-color: rgba(255,255,255,.5);
+  cursor: pointer;
+  position: absolute;
+
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  opacity: 1;
+  min-width: 30px;
+
+}
+
+.slide-button-parent-container {
+  position: relative;
+  margin: 22px 0;
+  min-height: 4px;
+}
+
+.select-box {
+  min-height: 10px;
+}
+
+.text-container {
+
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-text {
+  min-height: 373px;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  font-weight: 300;
+  font-size: 90px;
+  color: white;
+}
+
+.selected {
+  opacity: 1;
+  transition: 1s;
+}
+

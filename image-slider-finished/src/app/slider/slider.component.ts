@@ -11,7 +11,6 @@ export class SliderComponent implements OnInit {
   sliderArray: object[];
   transform: number;
   selectedIndex = 0;
-
   constructor(private data: DataService) {
     this.sliderArray = [];
     this.selectedIndex = 0;
